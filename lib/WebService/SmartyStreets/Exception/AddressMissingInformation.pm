@@ -1,5 +1,5 @@
 package WebService::SmartyStreets::Exception::AddressMissingInformation;
-$WebService::SmartyStreets::Exception::AddressMissingInformation::VERSION = '0.0102';
+$WebService::SmartyStreets::Exception::AddressMissingInformation::VERSION = '0.0105';
 use Moo;
 extends 'Throwable::Error';
 
@@ -19,7 +19,7 @@ WebService::SmartyStreets::Exception::AddressMissingInformation
 
 =head1 VERSION
 
-version 0.0102
+version 0.0105
 
 =head1 BUGS
 

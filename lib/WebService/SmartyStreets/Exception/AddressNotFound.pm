@@ -1,5 +1,5 @@
 package WebService::SmartyStreets::Exception::AddressNotFound;
-$WebService::SmartyStreets::Exception::AddressNotFound::VERSION = '0.0102';
+$WebService::SmartyStreets::Exception::AddressNotFound::VERSION = '0.0105';
 use Moo;
 extends 'Throwable::Error';
 
@@ -19,7 +19,7 @@ WebService::SmartyStreets::Exception::AddressNotFound
 
 =head1 VERSION
 
-version 0.0102
+version 0.0105
 
 =head1 BUGS
 

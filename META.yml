@@ -3,34 +3,36 @@ abstract: 'SmartyStreets API Bindings'
 author:
   - 'Ali Anari <ali@anari.me>'
 build_requires:
-  Exporter: 0
-  File::Spec: 0
-  IO::Handle: 0
-  IPC::Open3: 0
-  Memoize: 0
-  Storable: 0
-  Test::Modern: 0
-  Test::More: 0
-  perl: 5.006
-  strict: 0
-  warnings: 0
+  Exporter: '0'
+  File::Spec: '0'
+  IO::Handle: '0'
+  IPC::Open3: '0'
+  Memoize: '0'
+  Storable: '0'
+  Test::Modern: '0'
+  Test::More: '0'
+  perl: '5.006'
+  strict: '0'
+  warnings: '0'
 configure_requires:
-  ExtUtils::MakeMaker: 6.30
+  ExtUtils::MakeMaker: '0'
 dynamic_config: 0
-generated_by: 'Dist::Zilla version 5.013, CPAN::Meta::Converter version 2.141520'
+generated_by: 'Dist::Zilla version 5.020, CPAN::Meta::Converter version 2.141520'
 license: perl
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
-  version: 1.4
+  version: '1.4'
 name: WebService-SmartyStreets
 requires:
-  Function::Parameters: 0
-  Moo: 1.006000
-  Throwable::Error: 0
-  URI: 0
-  WebService::BaseClientRole: 0.0004
-  aliased: 0
+  Method::Signatures: '0'
+  Moo: '1.006000'
+  Throwable::Error: '0'
+  URI: '0'
+  WebService::Client: '0.0001'
+  aliased: '0'
 resources:
   bugtracker: https://github.com/aanari/WebService-SmartyStreets/issues
   repository: git://github.com/aanari/WebService-SmartyStreets.git
-version: 0.0102
+version: '0.0105'
+x_contributors:
+  - 'Naveed Massjouni <naveedm9@gmail.com>'

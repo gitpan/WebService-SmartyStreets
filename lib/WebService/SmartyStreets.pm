@@ -1,14 +1,14 @@
 package WebService::SmartyStreets;
-$WebService::SmartyStreets::VERSION = '0.0102';
+$WebService::SmartyStreets::VERSION = '0.0105';
 use Moo;
-with 'WebService::BaseClientRole';
+with 'WebService::Client';
 
 # VERSION
 
 use aliased 'WebService::SmartyStreets::Exception::AddressNotFound';
 use aliased 'WebService::SmartyStreets::Exception::AddressMissingInformation';
 
-use Function::Parameters ':strict';
+use Method::Signatures;
 use URI;
 
 has auth_id    => ( is => 'ro', required => 1 );
@@ -27,10 +27,10 @@ has '+base_url' => (
 );
 
 method verify_address(
-    Str :$street,
+    Str :$street!,
     Str :$street2 = '',
-    Str :$city,
-    Str :$state,
+    Str :$city!,
+    Str :$state!,
     Str :$zipcode = '',
     Int :$candidates = 2
 ) {
@@ -73,7 +73,7 @@ WebService::SmartyStreets
 
 =head1 VERSION
 
-version 0.0102
+version 0.0105
 
 =head1 SYNOPSIS
 
@@ -184,6 +184,12 @@ feature.
 =head1 AUTHOR
 
 Ali Anari <ali@anari.me>
+
+=head1 CONTRIBUTOR
+
+=for stopwords Naveed Massjouni
+
+Naveed Massjouni <naveedm9@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
